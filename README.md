@@ -21,11 +21,16 @@ covid19-primer-pipeline/
 ├── result.xlsx # Primer matching statistics
 └── report_reason.xlsx # Detailed mismatch reasons
 
+---
 
-**Installation**
+## **Installation**
+```bash
 pip install pandas numpy biopython xlsxwriter openpyxl
+```
+---
 
-**How to Run the Pipeline**
+# **How to Run the Pipeline**
+
 Step 1: Clean and Prepare the FASTA Data
 Run the following command to clean your raw COVID-19 FASTA and metadata:
 python covid_fasta_clean.py
