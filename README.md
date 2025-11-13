@@ -1,6 +1,13 @@
-**COVID-19 Primer Analysis Pipeline**
+# **COVID-19 Primer Analysis Pipeline**
+
 This repository contains a Python-based workflow to clean COVID-19 genome FASTA files, merge metadata, and analyze primer binding performance across multiple genomes.
+
 It is divided into three main modules, each handling a key part of the analysis pipeline.
+
+---
+
+## **Project Structure**
+
 
 **Project Structure**
 ├── covid_fasta_clean.py     # Step 1 - Clean FASTA and merge metadata
