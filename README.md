@@ -5,24 +5,23 @@ This repository contains a Python-based workflow to clean COVID-19 genome FASTA 
 It is divided into three main modules, each handling a key part of the analysis pipeline.
 
 ---
-
 ## **Project Structure**
-
-
-**Project Structure**
-├── covid_fasta_clean.py     # Step 1 - Clean FASTA and merge metadata
-├── primer_finder.py         # Step 2 - Analyze primers against cleaned genomes
-├── primer_loader.py         # Helper - Load and organize primer information
+covid19-primer-pipeline/
+├── covid_fasta_clean.py # Step 1 - Clean FASTA and merge metadata
+├── primer_finder.py # Step 2 - Analyze primers against cleaned genomes
+├── primer_loader.py # Helper - Load and organize primer information
 ├── data/
-│   ├── raw/
-│   │   ├── covid_raw_sequence.fasta
-│   │   ├── covid_meta_data.tsv
-│   │   ├── covid_variant.xlsx
-│   │   ├── primers_info.xlsx
-│   └── clean/               # Generated cleaned sequences
+│ ├── raw/
+│ │ ├── covid_raw_sequence.fasta
+│ │ ├── covid_meta_data.tsv
+│ │ ├── covid_variant.xlsx
+│ │ ├── primers_info.xlsx
+│ └── clean/ # Generated cleaned sequences
 └── results/
-    ├── result.xlsx           # Primer matching statistics
-    └── report_reason.xlsx    # Detailed mismatch reasons
+├── result.xlsx # Primer matching statistics
+└── report_reason.xlsx # Detailed mismatch reasons
+
+
 **Installation**
 pip install pandas numpy biopython xlsxwriter openpyxl
 
